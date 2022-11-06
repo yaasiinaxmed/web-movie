@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: linear-gradient(rgba(21,20,72,0.926), rgba(27,13,89,0.96)),
+    url('https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 996px;
+    margin: 0 auto;
+}
+
+.container ul {
+    height: 78px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container ul li {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.container ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.container .logo  {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.container .logo .logo-primary {
+    color: #0077ff;
+}
+
+.title {
+    color: white;
+    margin: 2rem 0;
+    font-size: 24px;
+}
+
+.movie-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 10px;
+    padding-bottom: 1em;
+}
+
+.movie-container .movie {
+    position: relative;
+    width: 320px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    background: #41317a;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.movie-container .movie img {
+    max-height: 400px;
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    display: block;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: top;
+    cursor: pointer;
+}
+
+.movie-container .movie .info {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.counts {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.movie-container .movie .movie-title {
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 20px 10px;
+}
+
+.vote-average {
+    background: #0077ff;
+    border-radius: 50%;
+    padding: 10px;
+    color: white;
+}
+
+.release-date {
+    background: #0077ff;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+}
+
+.model-containers {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #41317ae2;
+    z-index: 11;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.model-containers .model {
+    position: relative;
+    width: 60vw;
+    height: 40vh;
+    background: white;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+
+.model-info {
+    position: relative;
+    top: 15%;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.close {
+    position: absolute;
+    right: 5%;
+    font-size: 3.5rem;
+    cursor: pointer;
+}
+
+.model-containers.show {
+    display: flex;
+}
+
+.model-containers.hide {
+    display: none;
+}
+
